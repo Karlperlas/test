@@ -4,25 +4,39 @@
 }
 
 body {
-  background: red;    
+  background: rgb(225, 225, 225);  
+  --lineHeight: 80px  
+}
+
+nav > h1 {
+  cursor: default;
 }
 
 nav {
-  background: red;
-  justify-content: space-between;
+  background: rgb(255, 82, 82);
+  justify-content: center;
+  gap: 140px;
   padding: 0 40px;
 }
 
 nav > ul, nav {
   display: flex;
+  line-height: var(--lineHeight);
 }
 
 nav > ul {
-  line-height: 40px;
+  line-height: var(--lineHeight);
   list-style: none;
 }
 
 nav > ul > li a{
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
+  display: block;
+  padding: 0 10px;
+  transition: 120ms;
+}
+
+nav > ul > li a:hover{
+  color: rgb(71, 71, 71);
 }
